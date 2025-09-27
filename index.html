@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-bar fixed-top bg-white">
+        <div class="upper-bar position-relative pt-3">
+            <div class="top-upper-bar position-relative d-flex justify-content-around align-items-center bg-white py-3">
+                <img src="images/logo.png" alt="Dentist Logo">
+                <div class="contact">
+                    <span class="small px-3 py-2 me-2"><span class="d-md-inline d-none">+953 012 3654 896</span> <i
+                            class="fa-solid fa-phone d-md-none d-inline"></i></span>
+                    <span class="small px-3 py-2"><span class="d-md-inline d-none">support@colorlib.com</span> <i
+                            class="fa-regular fa-envelope d-md-none d-inline"></i></span>
+                    <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars d-md-none d-inline"></i>
+                    </a>
+
+                    <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-body d-flex flex-column justify-content-start align-items-start gap-3">
+                            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Home</a>
+                            <a href="#" class="text-uppercase text-white text-decoration-none small">About</a>
+                            <a href="#"
+                                class="text-uppercase text-white text-decoration-none small fw-bold">Services</a>
+                            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Opening
+                                Hours</a>
+                            <a class="nav-link text-white fw-bold text-uppercase small d-flex justify-content-between align-content-center w-100"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog <i class="fa-solid fa-angle-down small"></i>
+                            </a>
+                            <ul class="dropdown-menu bg-transparent text-white border-0 rounded-0 flex-column">
+                                <li class="text-white fw-bold"><a
+                                        class="dropdown-item fw-bold text-white small text-capitalize" href="#">Blog
+                                        Home</a></li>
+                                <li class="text-white fw-bold"><a
+                                        class="dropdown-item fw-bold text-white small text-capitalize" href="#">Blog
+                                        Single</a></li>
+                                <li class="text-white fw-bold"><a
+                                        class="dropdown-item fw-bold text-white small text-capitalize" href="#">Level
+                                        2</a></li>
+                            </ul>
+                            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Pricing</a>
+                            <a href="#"
+                                class="text-uppercase text-white text-decoration-none small fw-bold">Elements</a>
+                            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar z-1 navbar-expand container position-absolute start-50 translate-middle-x">
+                <div class="container-fluid d-flex">
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase small">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Opening Hour</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white" href="#" role="button">
+                                Blog <i class="fa-solid fa-angle-down small"></i>
+                            </a>
+                            <ul class="dropdown-menu border-0 rounded-0 flex-column">
+                                <li><a class="dropdown-item small text-capitalize" href="#">Blog Home</a></li>
+                                <li><a class="dropdown-item small text-capitalize" href="#">Blog Single</a></li>
+                                <li><a class="dropdown-item small text-capitalize" href="#">Level 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Elements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="social-icons d-flex gap-3">
+                        <a href="#" class="text-white-50 small"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white-50 small"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white-50 small"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#" class="text-white-50 small"><i class="fa-brands fa-behance"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div
+        class="hero-section position-relative text-white d-flex justify-content-center align-items-center flex-column text-center gap-3">
+        <span class="text-uppercase z-1">Don’t look further, This is your Dentist</span>
+        <h1 class=" z-1 fw-bolder">Authentic Dental Service</h1>
+        <p class="z-1 w-75">If you are looking at blank cassettes on the web, you may be very confused at the difference
+            in price. You may see some for as low as $.17 each. You may be saying to yourself.</p>
+        <button class="btn text-uppercase z-1 text-white rounded-0 px-4 py-2 small fw-medium">Get Started</button>
+    </div>
+    <div
+        class="schedule-section py-5 d-flex flex-column justify-content-center align-items-center gap-4 container bg-white rounded-3 text-center position-relative">
+        <h1 class="m-0 fw-bolder fs-2">Opening Hours</h1>
+        <p class="m-0">Get ready to cast your vote and select the right one</p>
+        <span class="fw-bold small px-4 py-2"><i class="fa-solid fa-circle small"></i> We are open Now</span>
+        <table class="small">
+            <tr>
+                <td class="text-end fw-lighter">Monday - Friday</td>
+                <td class="px-3 fw-lighter">:</td>
+                <td class="text-body-tertiary fw-lighter">10:00am to 05:00pm</td>
+            </tr>
+            <tr>
+                <td class="text-end fw-lighter">Saturday</td>
+                <td class="px-3 fw-lighter">:</td>
+                <td class="text-body-tertiary fw-lighter">12:00am to 03:00pm</td>
+            </tr>
+            <tr>
+                <td class="text-end fw-lighter">Sunday</td>
+                <td class="px-3 fw-lighter">:</td>
+                <td class="text-body-tertiary fw-lighter">closed</td>
+            </tr>
+        </table>
+    </div>
+    <div class="services-section container">
+        <div class="ss-head text-center">
+            <h1 class="fw-bold fs-2">What we Offer to our Customers</h1>
+            <p class="small text-body-tertiary">Who are in extremely love with eco friendly system.</p>
+        </div>
+        <div class="ss-body mt-5 d-flex justify-content-center align-items-center gap-4 flex-lg-nowrap flex-wrap">
+            <div class="card rounded-0 border-0" style="width: 18rem;">
+                <img src="images/service-1.png" class="" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold fs-5">Popular Use Of The Internet</h5>
+                    <p class="card-text text-body-tertiary small">inappropriate behavior is oftenlaug hed off as “boys
+                        will be boys,” women face higher conduct women face higher conduct.</p>
+                </div>
+            </div>
+            <div class="card rounded-0 border-0" style="width: 18rem;">
+                <img src="images/service-2.png" class="" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold fs-5">Protective Preventative</h5>
+                    <p class="card-text text-body-tertiary small">inappropriate behavior is oftenlaug hed off as “boys
+                        will be boys,” women face higher conduct women face higher conduct.</p>
+                </div>
+            </div>
+            <div class="card rounded-0 border-0" style="width: 18rem;">
+                <img src="images/service-3.png" class="" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold fs-5">Download Free Songs</h5>
+                    <p class="card-text text-body-tertiary small">inappropriate behavior is oftenlaug hed off as “boys
+                        will be boys,” women face higher conduct women face higher conduct.</p>
+                </div>
+            </div>
+            <div class="card rounded-0 border-0" style="width: 18rem;">
+                <img src="images/service-4.png" class="" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold fs-5">A Discount Toner Cartridge</h5>
+                    <p class="card-text text-body-tertiary small">inappropriate behavior is oftenlaug hed off as “boys
+                        will be boys,” women face higher conduct women face higher conduct.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-section row w-100">
+        <div class="col-lg-6 col-12"
+            style="background-image: url(images/image2.png); background-size: cover; background-position: center;">
+        </div>
+        <div class="col-lg-6 col-12 px-5 d-flex justify-content-center align-items-start flex-column gap-4"
+            style="padding: 120px 0px;">
+            <h1 class="text-white fw-bold">Who we are <br>
+                to Serve the nation</h1>
+            <p class="small text-secondary">inappropriate behavior is often laughed off as “boys will be boys,” women
+                face higher conduct standards
+                especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond
+                reproach.</p>
+            <div class="banner-cards d-flex flex-lg-nowrap flex-wrap justify-content-start align-items-center gap-4">
+                <div class="banner-card d-flex flex-column justify-content-center align-items-start">
+                    <span class="material-symbols-outlined fs-2">
+                        diamond
+                    </span>
+                    <h5 class="fw-bold text-white">Expert Services</h5>
+                    <p class="small text-secondary">Usage of the Internet is becoming more common due to rapid
+                        advancement of technology.</p>
+                </div>
+                <div class="banner-card d-flex flex-column justify-content-center align-items-start">
+                    <span class="material-symbols-outlined fs-2">
+                        deskphone
+                    </span>
+                    <h5 class="fw-bold text-white">Great Support</h5>
+                    <p class="small text-secondary">Usage of the Internet is becoming more common due to rapid
+                        advancement of technology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testinomials-section d-flex flex-column justify-content-center align-items-center">
+        <div
+            class="ts-head d-flex justify-content-center w-100 text-center flex-wrap align-items-center text-lg-center align-items-center flex-column">
+            <h1 class="fw-bold">Feedback from our real clients</h1>
+            <p class="text-body-tertiary small mt-3 w-50">It won’t be a bigger problem to find one video game lover in
+                your neighbor. Since the introduction of
+                Virtual Game.</p>
+        </div>
+        <div class="ts-body mt-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center row gap-3">
+                            <div class="card col-md-5 col-12 mt-4 col-lg-3 px-0 py-5">
+                                <img src="images/testi-1.png" class="w-25 align-self-center"
+                                    alt="...">
+                                <div
+                                    class="card-body w-100 px-5 py-4 bg-white d-flex flex-column justify-content-center align-items-center gap-2 text-center">
+                                    <p class="small text-center text-body-tertiary">Accessories Here you can find the
+                                        best computer accessory for your laptop,
+                                        monitor, printer, scanner, speaker, projector, hardware and more. laptop
+                                        accessory</p>
+                                    <h5 class="card-title fw-bold">Mark Alviro Wiens</h5>
+                                    <h6 class="card-subtitle small text-body-tertiary text-center">CEO at Google</h6>
+                                </div>
+                            </div>
+                            <div class="card col-md-5 col-12 mt-4 col-lg-3 px-0 py-5">
+                                <img src="images/testi-2.png" class="w-25 align-self-center"
+                                    alt="...">
+                                <div
+                                    class="card-body w-100 px-5 py-4 bg-white d-flex flex-column justify-content-center align-items-center gap-2 text-center">
+                                    <p class="small text-center text-body-tertiary">Accessories Here you can find the
+                                        best computer accessory for your laptop,
+                                        monitor, printer, scanner, speaker, projector, hardware and more. laptop
+                                        accessory</p>
+                                    <h5 class="card-title fw-bold">Mark Alviro Wiens</h5>
+                                    <h6 class="card-subtitle small text-body-tertiary text-center">CEO at Google</h6>
+                                </div>
+                            </div>
+                            <div class="card col-md-5 col-12 mt-4 col-lg-3 px-0 py-5">
+                                <img src="images/testi-3.png" class="w-25 align-self-center"
+                                    alt="...">
+                                <div
+                                    class="card-body w-100 px-5 py-4 bg-white d-flex flex-column justify-content-center align-items-center gap-2 text-center">
+                                    <p class="small text-center text-body-tertiary">Accessories Here you can find the
+                                        best computer accessory for your laptop,
+                                        monitor, printer, scanner, speaker, projector, hardware and more. laptop
+                                        accessory</p>
+                                    <h5 class="card-title fw-bold">Mark Alviro Wiens</h5>
+                                    <h6 class="card-subtitle small text-body-tertiary text-center">CEO at Google</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center row gap-3">
+                            <div class="card col-md-5 col-12 mt-4 col-lg-3 px-0 py-5">
+                                <img src="images/testi-1.png" class="w-25 align-self-center"
+                                    alt="...">
+                                <div
+                                    class="card-body w-100 px-5 py-4 bg-white d-flex flex-column justify-content-center align-items-center gap-2 text-center">
+                                    <p class="small text-center text-body-tertiary">Accessories Here you can find the
+                                        best computer accessory for your laptop,
+                                        monitor, printer, scanner, speaker, projector, hardware and more. laptop
+                                        accessory</p>
+                                    <h5 class="card-title fw-bold">Mark Alviro Wiens</h5>
+                                    <h6 class="card-subtitle small text-body-tertiary text-center">CEO at Google</h6>
+                                </div>
+                            </div>
+                            <div class="card col-md-5 col-12 mt-4 col-lg-3 px-0 py-5">
+                                <img src="images/testi-2.png" class="w-25 align-self-center"
+                                    alt="...">
+                                <div
+                                    class="card-body w-100 px-5 py-4 bg-white d-flex flex-column justify-content-center align-items-center gap-2 text-center">
+                                    <p class="small text-center text-body-tertiary">Accessories Here you can find the
+                                        best computer accessory for your laptop,
+                                        monitor, printer, scanner, speaker, projector, hardware and more. laptop
+                                        accessory</p>
+                                    <h5 class="card-title fw-bold">Mark Alviro Wiens</h5>
+                                    <h6 class="card-subtitle small text-body-tertiary text-center">CEO at Google</h6>
+                                </div>
+                            </div>
+                            <div class="card col-md-5 col-12 mt-4 col-lg-3 px-0 py-5">
+                                <img src="images/testi-3.png" class="w-25 align-self-center"
+                                    alt="...">
+                                <div
+                                    class="card-body w-100 px-5 py-4 bg-white d-flex flex-column justify-content-center align-items-center gap-2 text-center">
+                                    <p class="small text-center text-body-tertiary">Accessories Here you can find the
+                                        best computer accessory for your laptop,
+                                        monitor, printer, scanner, speaker, projector, hardware and more. laptop
+                                        accessory</p>
+                                    <h5 class="card-title fw-bold">Mark Alviro Wiens</h5>
+                                    <h6 class="card-subtitle small text-body-tertiary text-center">CEO at Google</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center row gap-3">
+                            <div class="card col-md-5 col-12 mt-4 col-lg-3 px-0 py-5">
+                                <img src="images/testi-1.png" class="w-25 align-self-center"
+                                    alt="...">
+                                <div
+                                    class="card-body w-100 px-5 py-4 bg-white d-flex flex-column justify-content-center align-items-center gap-2 text-center">
+                                    <p class="small text-center text-body-tertiary">Accessories Here you can find the
+                                        best computer accessory for your laptop,
+                                        monitor, printer, scanner, speaker, projector, hardware and more. laptop
+                                        accessory</p>
+                                    <h5 class="card-title fw-bold">Mark Alviro Wiens</h5>
+                                    <h6 class="card-subtitle small text-body-tertiary text-center">CEO at Google</h6>
+                                </div>
+                            </div>
+                            <div class="card col-md-5 col-12 mt-4 col-lg-3 px-0 py-5">
+                                <img src="images/testi-2.png" class="w-25 align-self-center"
+                                    alt="...">
+                                <div
+                                    class="card-body w-100 px-5 py-4 bg-white d-flex flex-column justify-content-center align-items-center gap-2 text-center">
+                                    <p class="small text-center text-body-tertiary">Accessories Here you can find the
+                                        best computer accessory for your laptop,
+                                        monitor, printer, scanner, speaker, projector, hardware and more. laptop
+                                        accessory</p>
+                                    <h5 class="card-title fw-bold">Mark Alviro Wiens</h5>
+                                    <h6 class="card-subtitle small text-body-tertiary text-center">CEO at Google</h6>
+                                </div>
+                            </div>
+                            <div class="card col-md-5 col-12 mt-4 col-lg-3 px-0 py-5">
+                                <img src="images/testi-3.png" class="w-25 align-self-center"
+                                    alt="...">
+                                <div
+                                    class="card-body w-100 px-5 py-4 bg-white d-flex flex-column justify-content-center align-items-center gap-2 text-center">
+                                    <p class="small text-center text-body-tertiary">Accessories Here you can find the
+                                        best computer accessory for your laptop,
+                                        monitor, printer, scanner, speaker, projector, hardware and more. laptop
+                                        accessory</p>
+                                    <h5 class="card-title fw-bold">Mark Alviro Wiens</h5>
+                                    <h6 class="card-subtitle small text-body-tertiary text-center">CEO at Google</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                    <div class="carousel-indicators position-static mt-4">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="rounded-circle active" aria-label="Slide 1" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            class="rounded-circle" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            class="rounded-circle" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="consultants-section">
+        <div class="cs-head text-center">
+            <h1 class="fw-bold">Our Consultants</h1>
+            <p class="text-body-tertiary small w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="cs-body mt-5 d-flex justify-content-center align-items-center gap-4 flex-wrap">
+            <div class="consultant d-flex justify-content-end align-items-center flex-column text-center"
+                style="background-image: url(images/consultant-1.png); background-size: cover;">
+                <h5 class="text-white fw-bold opacity-0 z-1">Andy Florence</h5>
+                <p class="small text-white opacity-0 z-1">inappropriate behavior</p>
+            </div>
+            <div class="consultant d-flex justify-content-end align-items-center flex-column text-center"
+                style="background-image: url(images/consultant-2.png); background-size: cover;">
+                <h5 class="text-white fw-bold opacity-0 z-1">Andy Florence</h5>
+                <p class="small text-white opacity-0 z-1">inappropriate behavior</p>
+            </div>
+            <div class="consultant d-flex justify-content-end align-items-center flex-column text-center"
+                style="background-image: url(images/consultant-3.png); background-size: cover;">
+                <h5 class="text-white fw-bold opacity-0 z-1">Andy Florence</h5>
+                <p class="small text-white opacity-0 z-1">inappropriate behavior</p>
+            </div>
+            <div class="consultant d-flex justify-content-end align-items-center flex-column text-center"
+                style="background-image: url(images/consultant-4.png); background-size: cover;">
+                <h5 class="text-white fw-bold opacity-0 z-1">Andy Florence</h5>
+                <p class="small text-white opacity-0 z-1">inappropriate behavior</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-section container">
+        <div class="fs-head text-center">
+            <h1 class="fw-bold">Features that make us unique</h1>
+            <p class="text-body-tertiary small w-50 mx-auto mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="fs-body row mt-5">
+            <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-start gap-3">
+                <div class="feature d-flex justify-content-center align-items-start gap-3">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined fs-1">
+                            rocket_launch
+                        </span>
+                    </div>
+                    <div class="feature-cont">
+                        <h5 class="fw-bold text-uppercase">24/7 Emergency</h5>
+                        <p class="small text-body-tertiary">inappropriate behavior is often laughed off as “boys will be
+                            boys,” women face higher conduct women face higher conduct.</p>
+                    </div>
+                </div>
+                <div class="feature d-flex justify-content-center align-items-start gap-3">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined fs-1">
+                            analytics
+                        </span>
+                    </div>
+                    <div class="feature-cont">
+                        <h5 class="fw-bold text-uppercase">X-Ray Service</h5>
+                        <p class="small text-body-tertiary">inappropriate behavior is often laughed off as “boys will be
+                            boys,” women face higher conduct women face higher conduct.</p>
+                    </div>
+                </div>
+                <div class="feature d-flex justify-content-center align-items-start gap-3">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined fs-1">
+                            bug_report
+                        </span>
+                    </div>
+                    <div class="feature-cont">
+                        <h5 class="fw-bold text-uppercase">Intensive Care</h5>
+                        <p class="small text-body-tertiary">inappropriate behavior is often laughed off as “boys will be
+                            boys,” women face higher conduct women face higher conduct.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-start gap-3">
+                <div class="feature d-flex justify-content-center align-items-start gap-3">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined fs-1">
+                            cardiology
+                        </span>
+                    </div>
+                    <div class="feature-cont">
+                        <h5 class="fw-bold text-uppercase">Expert Consultation</h5>
+                        <p class="small text-body-tertiary">inappropriate behavior is often laughed off as “boys will be
+                            boys,” women face higher conduct women face higher conduct.</p>
+                    </div>
+                </div>
+                <div class="feature d-flex justify-content-center align-items-start gap-3">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined fs-1">
+                            pets
+                        </span>
+                    </div>
+                    <div class="feature-cont">
+                        <h5 class="fw-bold text-uppercase">Dental Science</h5>
+                        <p class="small text-body-tertiary">inappropriate behavior is often laughed off as “boys will be
+                            boys,” women face higher conduct women face higher conduct.</p>
+                    </div>
+                </div>
+                <div class="feature d-flex justify-content-center align-items-start gap-3">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined fs-1">
+                            family_restroom
+                        </span>
+                    </div>
+                    <div class="feature-cont">
+                        <h5 class="fw-bold text-uppercase">Family Planning</h5>
+                        <p class="small text-body-tertiary">inappropriate behavior is often laughed off as “boys will be
+                            boys,” women face higher conduct women face higher conduct.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="appoinment-section row w-100">
+        <div class="as-img col-lg-6 col-12"></div>
+        <div class="as-cont col-lg-6 col-12 px-5 d-flex flex-column justify-content-center align-items-start gap-4">
+            <h1 class="text-white fw-bold">Book an<br />Appoinment</h1>
+            <input type="text" class="form-control bg-transparent rounded-0 border-secondary-subtle"
+                placeholder="Patient Name" aria-label="Patient Name" aria-describedby="basic-addon2">
+            <div class="input-group gap-4 flex-wrap">
+                <input type="number" class="form-control bg-transparent rounded-0 border-secondary-subtle"
+                    placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon2">
+                <input type="email" class="form-control bg-transparent rounded-0 border-secondary-subtle"
+                    placeholder="Email address" aria-label="Email address" aria-describedby="basic-addon2">
+            </div>
+            <div class="input-group gap-4 flex-wrap">
+                <input type="text" class="form-control bg-transparent rounded-0 border-secondary-subtle"
+                    placeholder="Date of birth" aria-label="Date of birth" aria-describedby="basic-addon2">
+                <input type="email" class="form-control bg-transparent rounded-0 border-secondary-subtle"
+                    placeholder="Appointment date" aria-label="Appointment date" aria-describedby="basic-addon2">
+            </div>
+            <textarea class="form-control bg-transparent rounded-0 border-secondary-subtle" aria-label="message"
+                placeholder="Message"></textarea>
+            <button
+                class="btn text-uppercase z-1 text-white rounded-0 px-4 py-2 small fw-medium align-self-end small fw-semibold">Confirm
+                Booking</button>
+        </div>
+    </div>
+
+    <div class="blog-section container">
+        <div class="blog-head text-center">
+            <h1 class="fw-bold">Latest From Our Blog</h1>
+            <p class="text-body-tertiary small w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="blog-body mt-5 d-flex gap-4 justify-content-center align-items-center flex-lg-nowrap flex-wrap">
+            <div class="card rounded-0 border-0 gap-3" style="width: 18rem;">
+                <div class="blog-img w-100">
+                    <img src="images/blog-1.png" alt="">
+                </div>
+                <div class="card-body">
+                    <span class="text-secondary small bg-black px-3 py-1">10 Jan 2018</span>
+                    <h5 class="card-title fw-bold mt-3">Addiction When Gambling Becomes A Problem</h5>
+                    <p class="card-text small text-body-tertiary">inappropriate behavior ipsum dolor sit amet,
+                        consectetur.</p>
+                </div>
+                <div class="reach d-flex justify-content-between px-3">
+                    <span class="small text-body-tertiary"><i class="fa-regular fa-heart"></i> 15 Likes</span>
+                    <span class="small text-body-tertiary"><i class="fa-regular fa-comment"></i> 02 Comments</span>
+                </div>
+            </div>
+            <div class="card rounded-0 border-0 gap-3" style="width: 18rem;">
+                <div class="blog-img w-100">
+                    <img src="images/blog-2.png" alt="">
+                </div>
+                <div class="card-body">
+                    <span class="text-secondary small bg-black px-3 py-1">10 Jan 2018</span>
+                    <h5 class="card-title fw-bold mt-3">Addiction When Gambling Becomes A Problem</h5>
+                    <p class="card-text small text-body-tertiary">inappropriate behavior ipsum dolor sit amet,
+                        consectetur.</p>
+                </div>
+                <div class="reach d-flex justify-content-between px-3">
+                    <span class="small text-body-tertiary"><i class="fa-regular fa-heart"></i> 15 Likes</span>
+                    <span class="small text-body-tertiary"><i class="fa-regular fa-comment"></i> 02 Comments</span>
+                </div>
+            </div>
+            <div class="card rounded-0 border-0 gap-3" style="width: 18rem;">
+                <div class="blog-img w-100">
+                    <img src="images/blog-3.png" alt="">
+                </div>
+                <div class="card-body">
+                    <span class="text-secondary small bg-black px-3 py-1">10 Jan 2018</span>
+                    <h5 class="card-title fw-bold mt-3">Addiction When Gambling Becomes A Problem</h5>
+                    <p class="card-text small text-body-tertiary">inappropriate behavior ipsum dolor sit amet,
+                        consectetur.</p>
+                </div>
+                <div class="reach d-flex justify-content-between px-3">
+                    <span class="small text-body-tertiary"><i class="fa-regular fa-heart"></i> 15 Likes</span>
+                    <span class="small text-body-tertiary"><i class="fa-regular fa-comment"></i> 02 Comments</span>
+                </div>
+            </div>
+            <div class="card rounded-0 border-0 gap-3" style="width: 18rem;">
+                <div class="blog-img w-100">
+                    <img src="images/blog-4.png" alt="">
+                </div>
+                <div class="card-body">
+                    <span class="text-secondary small bg-black px-3 py-1">10 Jan 2018</span>
+                    <h5 class="card-title fw-bold mt-3">Addiction When Gambling Becomes A Problem</h5>
+                    <p class="card-text small text-body-tertiary">inappropriate behavior ipsum dolor sit amet,
+                        consectetur.</p>
+                </div>
+                <div class="reach d-flex justify-content-between px-3">
+                    <span class="small text-body-tertiary"><i class="fa-regular fa-heart"></i> 15 Likes</span>
+                    <span class="small text-body-tertiary"><i class="fa-regular fa-comment"></i> 02 Comments</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-column gap-5">
+        <div class="upper-footer container px-5 row d-flex flex-md-row flex-column gap-md-0 gap-4">
+            <div class="col-lg-2 col-12 d-flex flex-column gap-2 justify-content-start align-items-start">
+                <h5 class="text-white fw-bold">Top Products</h5>
+                <a href="#" class="text-white small text-decoration-none">Managed Website</a>
+                <a href="#" class="text-white small text-decoration-none">Manage Reputation</a>
+                <a href="#" class="text-white small text-decoration-none">Power Tools</a>
+                <a href="#" class="text-white small text-decoration-none">Marketing Service</a>
+            </div>
+            <div class="col-lg-4 col-12 d-flex flex-column gap-2 justify-content-start align-items-start">
+                <h5 class="text-white fw-bold">Contact Us</h5>
+                <p class="small text-white">56/8, bir uttam qazi nuruzzaman road, west panthapath, kalabagan, Dhanmondi,
+                    Dhaka - 1205</p>
+                <h4 class="m-0 fw-bold">012-6532-568-9746</h4>
+                <h4 class="m-0 fw-bold">012-6532-568-97468</h4>
+            </div>
+            <div class="col-lg-6 col-12">
+                <h5 class="text-white fw-bold">Newsletter</h5>
+                <p class="small text-white m-0">You can trust us. we only send promo offers, not a single spam.</p>
+                <input type="email" name="Email address" id="Email address" placeholder="Your Email Address"
+                    class="rounded-pill mt-3 px-3 py-2 border-0 me-3">
+                <button
+                    class="text rounded-pill z-1 mt-3 text-white rounded-0 px-4 py-2 small fw-medium align-self-end small fw-semibold">Subscribe
+                    <i class="fa-solid fa-arrow-right-long position-relative"></i></button>
+            </div>
+        </div>
+        <div class="lower-footer container align-items-center d-flex justify-content-md-between justify-content-center flex-wrap">
+            <div class="text-white text-center">Copyright &copy;2025 All rights reserved | This template is made with <i
+                    class="fa-regular fa-heart"></i> by <a href="#" class="text-decoration-none">Colorlib</a></div>
+            <div class="social-icons d-flex gap-5 mt-4">
+                <a href="#" class="text-white-50 small"><i class="fa-brands fa-facebook-f text-white"></i></a>
+                <a href="#" class="text-white-50 small"><i class="fa-brands fa-twitter text-white"></i></a>
+                <a href="#" class="text-white-50 small"><i class="fa-brands fa-dribbble text-white"></i></a>
+                <a href="#" class="text-white-50 small"><i class="fa-brands fa-behance text-white"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

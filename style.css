@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(assests/fonts/Poppins-Regular.ttf);
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+:root {
+    --primary: #67bc00;
+    --font: "Poppins";
+}
+
+body {
+    font-family: var(--font) !important;
+}
+
+::selection {
+    color: white !important;
+    background-color: #6EB814;
+}
+
+.upper-bar .contact span {
+    background-color: #f9f9ff;
+}
+
+nav {
+    background-image: -webkit-linear-gradient(0deg, #ade600 0%, #62b900 100%);
+}
+
+.social-icons a {
+    transition: all 0.3s ease 0s;
+}
+
+.upper-bar {
+    height: 15vh;
+}
+
+.social-icons a:hover {
+    color: white !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-item:hover {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.offcanvas{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.offcanvas .dropdown-menu.show + a {
+  margin-top: 6rem;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url(images/hero\ \(1\).png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 9, 30, 0.85);
+}
+
+.hero-section span {
+    letter-spacing: 2px;
+}
+
+.hero-section button {
+    background-color: #67bc00;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.hero-section button:hover {
+    border: 1px solid white;
+}
+
+.schedule-section {
+    bottom: 120px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-section span {
+    background-color: #f9f9ff;
+    cursor: pointer;
+}
+
+.schedule-section span i {
+    color: var(--primary);
+}
+
+.ss-body .card .card-title {
+    transition: all 0.3s ease 0s;
+}
+
+.ss-body .card .card-title:hover {
+    color: var(--primary);
+}
+
+.services-section {
+    padding-bottom: 120px;
+}
+
+.banner-section {
+    background-color: #04091E;
+}
+
+.banner-card span {
+    color: var(--primary);
+}
+
+.testinomials-section {
+    padding: 120px 0px;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel-item::before,
+.carousel-item::after {
+    content: none !important;
+    background: none !important;
+}
+
+.carousel-indicators {
+    position: static;
+    margin: 0 !important;
+}
+
+.carousel-indicators button {
+    background-color: #CCCCCC !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary) !important;
+}
+
+.ts-body h5 {
+    transition: all 0.3s ease 0s;
+}
+
+.ts-body .card {
+    cursor: pointer;
+}
+
+.ts-body .card:hover h5 {
+    color: var(--primary);
+}
+
+.consultants-section {
+    padding: 120px 0px;
+    background-color: #F9F9FF;
+}
+
+.consultant {
+    height: 280px;
+    width: 265px;
+    position: relative;
+    cursor: pointer;
+}
+
+.consultant::after {
+    background-image: -webkit-linear-gradient(0deg, #ade600 0%, #62b900 100%);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.consultant:hover::after {
+    opacity: 0.85 !important;
+}
+
+.consultant:hover h5,
+.consultant:hover p {
+    opacity: 1 !important;
+}
+
+.consultant * {
+    transition: opacity 0.5s;
+}
+
+.features-section {
+    padding: 120px 0px;
+}
+
+.feature-icon span {
+    color: var(--primary);
+}
+
+.feature-cont h5 {
+    transition: all 0.3s ease 0s;
+}
+
+.feature-cont h5:hover {
+    color: var(--primary);
+}
+
+.appoinment-section {
+    background-color: #04091E;
+}
+
+.as-img {
+    background-image: url(images/image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.as-cont {
+    padding: 120px 0px;
+}
+
+.as-cont input::placeholder,
+.as-cont textarea::placeholder {
+    font-size: 13px;
+    color: #505362;
+}
+
+.as-cont input,
+.as-cont textarea {
+    border-color: #505362 !important;
+}
+
+.as-cont textarea {
+    height: 150px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.as-cont input {
+    color: #ccc !important;
+    font-size: 13px;
+}
+
+.as-cont button {
+    background-color: #67bc00;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.as-cont button:hover {
+    border-color: #67bc00;
+    color: #67bc00 !important;
+}
+
+.blog-section {
+    padding: 120px 0px;
+}
+
+.blog-img {
+    overflow: hidden;
+    width: 210px;
+    height: 160px;
+}
+
+.blog-img img {
+    transform: scale(1);
+    transition: all 0.3s ease 0s;
+}
+
+.blog-body .card:hover img {
+    transform: scale(1.1) !important;
+}
+
+.blog-body .card:hover h5 {
+    color: var(--primary);
+}
+
+.blog-body .card h5 {
+    transition: all 0.3s ease 0s;
+}
+
+
+footer {
+    background-color: #04091E;
+    padding: 120px 0px;
+}
+
+.upper-footer h4 {
+    background: -webkit-linear-gradient(0deg, #ade600 0%, #62b900 100%);
+    background: -ms-linear-gradient(0deg, #ade600 0%, #62b900 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lower-footer i,
+.lower-footer a {
+    color: var(--primary);
+}
+
+.upper-footer button {
+    background-color: #67bc00;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border: 1px solid transparent
+}
+
+.upper-footer button i {
+    transition: all 0.3s ease 0s;
+}
+
+.upper-footer button:hover i {
+    left: 5px;
+}
+
+@media screen and (max-width: 1005px) {
+    .navbar {
+        display: none;
+    }
+
+    .upper-bar {
+        height: 10vh;
+    }
+}
